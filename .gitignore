@@ -1,0 +1,11 @@
+# Ignore the SQLite database file
+finance.db
+
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+*.log
