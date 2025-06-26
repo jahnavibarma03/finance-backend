@@ -8,6 +8,11 @@ const transactionRoutes = require("./routes/transactionRoutes");
 
 const app = express();
 app.use(cors());
+app.use(cors({
+  origin: "https://finance-tracker-frontend-jahnavibarma03s-projects.vercel.app", 
+  credentials: true
+}));
+
 app.use(express.json());
 
 // Mount routes
