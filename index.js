@@ -8,8 +8,13 @@ const transactionRoutes = require("./routes/transactionRoutes");
 
 const app = express();
 app.use(cors());
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://finance-tracker-frontend-alpha.vercel.app" // Replace with actual Vercel domain
+];
+
 app.use(cors({
-  origin: "https://finance-tracker-frontend-jahnavibarma03s-projects.vercel.app", 
+  origin: allowedOrigins,
   credentials: true
 }));
 
